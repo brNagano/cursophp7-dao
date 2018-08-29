@@ -28,8 +28,14 @@ $usuario->insert();
 echo $usuario;*/
 
 // Atualiza usuário
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("Dougraaaaaaaaaas", "3r2-48sda");
+echo $usuario;*/
+
+// Deleta usuário
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
 ?>
