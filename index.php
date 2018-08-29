@@ -16,8 +16,20 @@ echo json_encode($lista);*/
 echo json_encode($search);*/
 
 // Traz usuário validando pelo login e senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("user","12345");
-echo $usuario;
+echo $usuario;*/
 
+// Insere novo usuário
+/*$usuario = new Usuario();
+$usuario->setDeslogin("Testeeeeeeeeeeeeeeeee");
+$usuario->setDessenha("Testeeeeeeeeeeeeeeeee");
+$usuario->insert();
+echo $usuario;*/
+
+// Atualiza usuário
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->update("Dougraaaaaaaaaas", "3r2-48sda");
+echo $usuario;
 ?>
